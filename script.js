@@ -12,3 +12,12 @@ function changeBackground() {
 }
 
 btn.addEventListener("click", changeBackground);// Agrega evento a la función changeBackground
+
+document.addEventListener("DOMContentLoaded", function () {
+  const boton = document.querySelector(".button-toggle");
+  const menuLinks = document.querySelector(".menu");
+
+  boton.addEventListener("click", function () {
+    menuLinks.classList.toggle("open");
+  });
+});
